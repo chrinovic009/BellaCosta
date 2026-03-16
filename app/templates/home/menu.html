@@ -1,0 +1,50 @@
+	<!DOCTYPE html>
+	<html lang="FR-fr" class="no-js">
+
+		<head>
+			<title>Menu - Bella Costa</title>
+			{% include 'includes/home/head-home.html' %}
+		</head>
+
+		<body>	
+			<header id="header">
+				{% include 'includes/home/header-home.html' %}
+			</header><!-- #header -->
+			
+			<!-- start banner Area -->
+			<section class="about-banner relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Menus				
+							</h1>	
+							<p class="text-white link-nav"><a href="/">Acceuil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/menu"> Menus</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->			
+
+			<!-- Start menu-area Area -->
+             <section class="menu-area section-gap" id="menu">
+                {% include 'includes/home/menu-home.html' %}
+            </section>
+            <!-- End menu-area Area -->						
+
+			<!-- Start reservation Area -->
+			<section class="reservation-area section-gap relative">
+				{% include 'includes/home/reservation-home.html' %}
+			</section>
+			<!-- End reservation Area -->				
+
+			<!-- start footer Area -->		
+			<footer class="footer-area">
+				{% include 'includes/home/footer-home.html' %}
+			</footer>
+			<!-- End footer Area -->	
+
+			{% include 'includes/home/script-home.html' %}
+		</body>
+	</html>

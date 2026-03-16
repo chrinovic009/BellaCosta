@@ -1,0 +1,43 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+		<head>
+			<title>Gallerie - Bella Costa</title>
+			{% include 'includes/home/head-home.html' %}
+		</head>
+		<body>	
+			<header id="header">
+				{% include 'includes/home/header-home.html' %}
+			</header><!-- #header -->
+			
+			<!-- start banner Area -->
+			<section class="about-banner relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Gallery				
+							</h1>	
+							<p class="text-white link-nav"><a href="/">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/gallery"> Gallerie</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->			
+
+			<!-- Start gallery-area Area -->
+            <section class="gallery-area section-gap" id="gallery">
+                {% include 'includes/home/gallery-home.html' %}
+            </section>
+            <!-- End gallery-area Area -->					
+
+			<!-- start footer Area -->		
+			<footer class="footer-area">
+				{% include 'includes/home/footer-home.html' %}
+			</footer>
+			<!-- End footer Area -->	
+
+			{% include 'includes/home/script-home.html' %}
+		</body>
+	</html>

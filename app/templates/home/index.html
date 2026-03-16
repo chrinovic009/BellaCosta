@@ -1,0 +1,72 @@
+	<!DOCTYPE html>
+	<html lang="FR-fr" class="no-js">
+		
+		<head>
+			<title>Acceuil - Bella Costa</title>
+			{% include 'includes/home/head-home.html' %}
+		</head>
+
+		<body>	
+			<header id="header">
+				{% include 'includes/home/header-home.html' %}
+			</header><!-- #header -->
+			
+			<!-- start banner Area -->
+			<section class="banner-area">		
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-12 banner-content">
+							<h6 class="text-white">Larges options de choix</h6>
+							<h1 class="text-white">Une expérience culinaire et festive</h1>
+							<p class="text-white">
+								Découvrez un lieu où la gastronomie rencontre l’élégance. Notre chef sélectionne des ingrédients 
+								de qualité pour créer des plats savoureux, accompagnés de cocktails signature préparés par nos mixologues. 
+								Que ce soit pour un dîner, un verre entre amis ou une soirée animée, chaque moment devient une expérience unique.
+							</p>
+							<a href="/menu" class="primary-btn text-uppercase">Découvrir notre Menu</a>
+						</div>
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start home-about Area -->
+			<section class="home-about-area section-gap">
+				{% include 'includes/home/about-home.html' %}
+			</section>
+			<!-- End home-about Area -->			
+
+			<!-- Start menu-area Area -->
+            <section class="menu-area section-gap" id="menu">
+                {% include 'includes/home/menu-home.html' %}
+            </section>
+            <!-- End menu-area Area -->			
+
+			<!-- Start reservation Area -->
+			<section class="reservation-area section-gap relative">
+				{% include 'includes/home/reservation-home.html' %}
+			</section>
+			<!-- End reservation Area -->
+			
+			<!-- Start gallery-area Area -->
+            <section class="gallery-area section-gap" id="gallery">
+                {% include 'includes/home/gallery-home.html' %}
+            </section>
+            <!-- End gallery-area Area -->			
+
+			<!-- Start review Area -->
+			<section class="review-area section-gap">
+				{% include 'includes/home/review-home.html' %}
+			</section>
+			<!-- End review Area -->											
+
+			<!-- start footer Area -->		
+			<footer class="footer-area">
+				{% include 'includes/home/footer-home.html' %}
+			</footer>
+			<!-- End footer Area -->	
+
+			{% include 'includes/home/script-home.html' %}
+				
+		</body>
+	</html>

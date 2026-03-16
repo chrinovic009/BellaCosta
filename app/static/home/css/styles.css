@@ -1,0 +1,28 @@
+.footer-widget-wrap a{
+    color: #fff;
+    font-size: 16px;
+}
+.header-top {
+    position: relative;
+}
+
+section .filter-wrap {
+    background-color: #0000!important;
+}
+
+.header-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(24, 24, 24, 0.858); /* rouge transparent */
+    z-index: 1;
+}
+
+.header-top .container {
+    position: relative;
+    z-index: 2; /* garde le contenu visible au-dessus */
+}

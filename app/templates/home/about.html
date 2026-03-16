@@ -1,0 +1,147 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+		<head>
+			<title>A propos - Bella Costa</title>
+			{% include 'includes/home/head-home.html' %}
+		</head>
+
+		<body>	
+			<header id="header">
+				{% include 'includes/home/header-home.html' %}
+			</header><!-- #header -->
+			
+			<!-- start banner Area -->
+			<section class="about-banner relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								A Propos de nous				
+							</h1>	
+							<p class="text-white link-nav"><a href="/">Acceuil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/about"> A Propos</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start home-about Area -->
+			<section class="home-about-area section-gap">
+				{% include 'includes/home/about-home.html' %}
+			</section>
+			<!-- End home-about Area -->	
+
+			<!-- Start services Area -->
+			<section class="services-area pb-120">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Nos Services</h1>
+								<p>Profitez d’une expérience culinaire et d’une ambiance unique dans notre restaurant-bar.</p>
+							</div>
+						</div>
+					</div>						
+
+					<div class="row">
+
+						<!-- Service 1 -->
+						<div class="col-lg-4">
+							<div class="single-service">
+								<div class="thumb">
+									<img src="../../static/home/img/reservation-bg.jpeg" alt="">
+								</div>
+								<h4>Restaurant & Cuisine locale</h4>
+								<p>
+									Savourez des plats congolais et internationaux préparés avec des ingrédients frais dans un cadre convivial.
+								</p>
+							</div>
+						</div>
+
+						<!-- Service 2 -->
+						<div class="col-lg-4">
+							<div class="single-service">
+								<div class="thumb">
+									<img src="../../static/home/img/bar-1.jfif" alt="">
+								</div>
+								<h4>Bar & Cocktails</h4>
+								<p>
+									Une large sélection de bières, vins, cocktails et boissons pour accompagner vos moments entre amis.
+								</p>
+							</div>
+						</div>
+
+						<!-- Service 3 -->
+						<div class="col-lg-4">
+							<div class="single-service">
+								<div class="thumb">
+									<img src="../../static/home/img/bar-2.jpg" alt="">
+								</div>
+								<h4>Commande à emporter</h4>
+								<p>
+									Commandez vos plats préférés et récupérez-les rapidement pour les savourer chez vous.
+								</p>
+							</div>
+						</div>
+
+						<!-- Service 4 -->
+						<div class="col-lg-4">
+							<div class="single-service">
+								<div class="thumb">
+									<img src="../../static/home/img/bar-3.jpg" alt="">
+								</div>
+								<h4>Organisation d'événements</h4>
+								<p>
+									Nous accueillons anniversaires, réunions et événements privés dans un cadre chaleureux.
+								</p>
+							</div>
+						</div>
+
+						<!-- Service 5 -->
+						<div class="col-lg-4">
+							<div class="single-service">
+								<div class="thumb">
+									<img src="../../static/home/img/bar-4.jpg" alt="">
+								</div>
+								<h4>Soirées & Musique</h4>
+								<p>
+									Profitez de nos soirées animées avec DJ, musique live et une ambiance festive.
+								</p>
+							</div>
+						</div>
+
+						<!-- Service 6 -->
+						<div class="col-lg-4">
+							<div class="single-service">
+								<div class="thumb">
+									<img src="../../static/home/img/bar-5.jpg" alt="">
+								</div>
+								<h4>Réservation de table</h4>
+								<p>
+									Réservez votre table à l’avance pour profiter pleinement de votre repas sans attente.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>	
+			</section>
+			<!-- End services Area -->
+
+			<!-- Start review Area -->
+			<section class="review-area section-gap">
+				{% include 'includes/home/review-home.html' %}
+			</section>
+			<!-- End review Area -->				
+
+			<!-- start footer Area -->		
+			<footer class="footer-area">
+				{% include 'includes/home/footer-home.html' %}
+			</footer>
+			<!-- End footer Area -->	
+
+			{% include 'includes/home/script-home.html' %}
+		</body>
+	</html>
