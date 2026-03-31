@@ -10,26 +10,33 @@
             </p>
         </div>
         <div class="col-lg-5 reservation-right">
-            <form class="form-wrap text-center" action="#">
-                <input type="text" class="form-control" name="name" placeholder="Votre nom complet" onfocus="this.placeholder=''" onblur="this.placeholder='Votre nom complet'">
-                
-                <input type="email" class="form-control" name="email" placeholder="Votre adresse email" onfocus="this.placeholder=''" onblur="this.placeholder='Votre adresse email'">
-                
-                <input type="text" class="form-control" name="phone" placeholder="Numéro de téléphone" onfocus="this.placeholder=''" onblur="this.placeholder='Numéro de téléphone'">
-                
-                <input type="text" class="form-control date-picker" name="date" placeholder="Date et heure souhaitées" onfocus="this.placeholder=''" onblur="this.placeholder='Date et heure souhaitées'">
-                
-                <div class="form-select" id="service-select">
-                    <select>
-                        <option data-display="">Type d'événement</option>
-                        <option value="friends">Soirée entre amis</option>
-                        <option value="birthday">Anniversaire</option>
-                        <option value="romantic">Dîner romantique</option>
-                        <option value="private">Événement privé / corporatif</option>
+            <form class="form-wrap text-center" action="https://formsubmit.co/chrinovicnyembo009@gmail.com" method="POST">
+
+                <input type="text" class="form-control" name="name" placeholder="Votre nom complet" required>
+
+                <input type="email" class="form-control" name="email" placeholder="Votre adresse email" required>
+
+                <input type="text" class="form-control" name="phone" placeholder="Numéro de téléphone" required>
+
+                <input type="text" class="form-control date-picker" name="date" placeholder="Date et heure souhaitées" required>
+
+                <div class="form-select form-select-dark">
+                    <select name="event_type" class="form-control text-white" style="background:#000; color:#fff;" required>
+                        <option value="" disabled selected>Type d'événement</option>
+                        <option value="Soirée entre amis">Soirée entre amis</option>
+                        <option value="Anniversaire">Anniversaire</option>
+                        <option value="Dîner romantique">Dîner romantique</option>
+                        <option value="Événement privé / corporatif">Événement privé / corporatif</option>
                     </select>
                 </div>
-                
-                <button class="primary-btn text-uppercase mt-20">Réservez votre soirée</button>
+
+                <input type="hidden" name="_subject" value="Nouvelle réservation">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit" class="primary-btn text-uppercase mt-20">
+                    Réservez votre soirée
+                </button>
+
             </form>
         </div>
     </div>

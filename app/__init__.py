@@ -45,7 +45,13 @@ def create_app(config="app.config.Config"):
         response.headers["X-Frame-Options"] = "DENY"
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "no-referrer-when-downgrade"
-        response.headers["Content-Security-Policy"] = "default-src *"
+        response.headers["Content-Security-Policy"] = (
+            "default-src 'self'; "
+            "script-src 'self' 'unsafe-inline'; "
+            "style-src 'self' 'unsafe-inline'; "
+            "img-src 'self' data:; "
+            "font-src 'self' data:;"
+        )
         return response
         
     app.config.from_object(config)

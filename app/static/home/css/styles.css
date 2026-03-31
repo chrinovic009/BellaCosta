@@ -26,3 +26,7 @@ section .filter-wrap {
     position: relative;
     z-index: 2; /* garde le contenu visible au-dessus */
 }
+
+select {
+    background: #444 !important;
+}
